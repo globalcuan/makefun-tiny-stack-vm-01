@@ -4,6 +4,4 @@
 
 # tiny stack VM
 
-A [make.fun tiny-stack-vm-01](https://make.fun/bounty/tiny-stack-vm-01-run-20261122) entry. `main.ts` (Node 22, standard library only) implements the kit's tiny stack ISA exactly as the reference VM defines it: 32-bit wrapping integers, a 256-value stack, calls, 256 words of memory, input/output, and all ten traps with their own exit codes, under the reference step and output limits. For every instance directory in `MAKEFUN_INPUT_DIR` it writes `stdout.bin` and `exit.txt` to `MAKEFUN_OUTPUT_DIR`.
-
-Verified against the reference VM on the full practice set (40/40 byte-exact) and on 600 randomly generated programs (600/600).
+A [make.fun tiny-stack-vm-01](https://make.fun/bounty/tiny-stack-vm-01-run-20261122) entry: `main.ts` implements the kit's stack ISA with the reference VM's exact semantics (wrapping 32-bit ints, 256-value stack, calls, memory, I/O, ten traps). Verified 40/40 on the practice set against the reference VM.
